@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+      <h1>Dynamic Resume Builder</h1>
+    </div>
+      <form id="resume-form">
+        <div class="form-group">
+          <fieldset class="personal-info">
+            <legend class="persnol-info-text">Personal Info:</legend>
+          <label for="name">First Name</label>
+          <input type="text" id="firstname" placeholder="Enter your name" required>
+          <label for="name">Last Name</label>
+          <input type="text" id="last-name" placeholder="Enter your name" required>
+          <label for="name">Date of Birth</label>
+          <input type="date" id="date" required>
+
+        </fieldset>
+        </div>
+  
+        <div class="form-group">
+          <fieldset class="contact-info">
+            <legend class="contact-text">Contact:</legend>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+          <label for="email">Mobile</label>
+          <input type="mobile" id="email" placeholder="Enter your mobile" required>
+          <label for="email">Adress</label>
+          <input type="address" id="email" placeholder="Enter your adress" required>
+        </fieldset>
+        </div>
+  
+        <div class="form-group">
+          <label for="skills">Skills</label>
+          <textarea id="skills" placeholder="List your skills" required></textarea>
+        </div>
+  
+        <div class="form-group">
+          <label for="experience">Experience</label>
+          <textarea id="experience" placeholder="Describe your experience" required></textarea>
+        </div>
+  
+        <div class="form-group">
+          <label for="template">Select Template</label>
+          <select id="template">
+            <option value="basic">Basic Template</option>
+            <option value="modern">Modern Template</option>
+            <option value="creative">Creative Template</option>
+          </select>
+        </div>
+  
+        <button type="submit">Generate Resume</button>
+        <button type="button" id="save-draft">Save Draft</button>
+        <button type="button" id="download-pdf">Download PDF</button>
+      </form>
+  
+      <div id="resume-preview" class="resume-preview">
+        <h2>Resume Preview</h2>
+        <div id="preview-content">
+          <!-- Preview will be rendered here -->
+        </div>
+      </div>
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+  </html>
